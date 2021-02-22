@@ -1,8 +1,14 @@
 import Read_file,maps_manager,create_index_file
+import os
+
+
 
 def start_project():
-    KLOutput_path="./KL_Output.txt"
-    file = Read_file.Read_file(KLOutput_path=KLOutput_path)
+    here = os.path.dirname(os.path.abspath(__file__))
+    filename = os.path.join(here, "./KL_Output.txt")
+
+    # KLOutput_path="./KL_Output.txt"
+    file = Read_file.Read_file(KLOutput_path=filename)
     tirps = file.get_tirps()
     manager = maps_manager.maps_manager(tirps=tirps)
     start_dictionary = manager.get_start_dictionary()
