@@ -46,6 +46,7 @@ class TIRP (object):
             return ""
 
     def __str__(self):
+        a=self.convert_list_to_string(self.occurences)
         return "("+str(self.size)+", "+self.string_symbols(self.symbols)+", "+\
                self.string_relations(self.relations)+", "+self.num_supporting_entities+", "+self.mean_horizontal_support+", "+\
                self.convert_list_to_string(self.occurences)+")"

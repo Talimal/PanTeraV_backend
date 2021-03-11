@@ -8,9 +8,11 @@ CORS(app)
 def do_dict(child):
 	child.__dict__
 
+[manager,states_map] = main.start_project()
+
 @app.route('/startData', methods=['GET'])
 def get_start_data():
-	manager = main.start_project()
+	# manager = main.start_project()
 	start_dict = manager.get_start_dictionary()
 	jsonStart={}
 	for entry in start_dict:
@@ -22,7 +24,7 @@ def get_start_data():
 
 @app.route('/endData', methods=['GET'])
 def get_end_data():
-	manager = main.start_project()
+	# manager = main.start_project()
 	end_dict = manager.get_end_dictionary()
 	jsonEnd={}
 	for entry in end_dict:
@@ -31,6 +33,10 @@ def get_end_data():
 			array_children.append(json.dumps(child.__dict__))
 		jsonEnd[json.dumps(entry.__dict__)]=array_children
 	return jsonEnd
+
+@app.route('/states', methods=['GET'])
+def get_states():
+	return json.dumps(states_map)
 
 
 @app.route('/')

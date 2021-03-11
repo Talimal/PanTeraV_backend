@@ -94,7 +94,7 @@ class maps_manager (object):
             #get all the TIRPs in size of risha
             tirps_in_size_n = self.get_start_tirps_by_size(tirp_size=n)
             #get all the TIRPs in size of risha with the same symbols as the current TIRP
-            risha_symbols = tirp.get_symbols()[0:n-1]
+            risha_symbols = tirp.get_symbols()[0:n]
             tirps_with_symbols = self.get_tirps_by_symbols(tirps_list=tirps_in_size_n, symbol_list=risha_symbols)
             #from all the TIRPs till now, get the ones with the same relations as the current TIRP
             num_relations = int((n)*(n-1)/2) # n=size-1
