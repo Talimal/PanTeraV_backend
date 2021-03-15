@@ -12,6 +12,7 @@ class maps_manager (object):
         self.init_dictionaries()
         self.build_start_dictionary()
         self.build_end_dictionary()
+        self.raw_intervals = dict()
 
 
 
@@ -57,29 +58,7 @@ class maps_manager (object):
     def get_ends_by_tirp(self, tirp):
         return self.end_dictionary[tirp]
 
-    """created the start_dic : for each TIRP adds it to the right location according to it's size, symbols, relations"""
-    # def build_start_dictionary2(self):
-    #     for tirp in self.tirps:
-    #         # if tirp size if 1, there is no tirps from left(before it), then continue
-    #         tirp_size = tirp.get_size()
-    #         if tirp_size == 1:
-    #             continue
-    #
-    #         # for every risha (רישא) of the TIRP, we want to add this TIRP to the right of the risha
-    #         # n is the size of the risha:
-    #         for n in range(1,tirp_size):
-    #             #get all the TIRPs in size of risha
-    #             tirps_in_size_n = self.get_start_tirps_by_size(tirp_size=n)
-    #             #get all the TIRPs in size of risha with the same symbols as the current TIRP
-    #             risha_symbols = tirp.get_symbols()[0:n]
-    #             tirps_with_symbols = self.get_tirps_by_symbols(tirps_list=tirps_in_size_n, symbol_list=risha_symbols)
-    #             #from all the TIRPs till now, get the ones with the same relations as the current TIRP
-    #             num_relations = int((n)*(n-1)/2)
-    #             risha_relations = tirp.get_relations()[0:num_relations]
-    #             risha_tirps = self.get_tirps_by_relations(tirps_list=tirps_with_symbols, relation_list=risha_relations)
-    #             #add the current TIRP from the right to all the risha TIRPs
-    #             self.add_tirp_to_start_by_tirplist(tirps_list=risha_tirps, tirp_to_add=tirp)
-    #             self.add_before_tirps_by_tirp(tirp=tirp, before_tirp_list=risha_tirps)
+
 
     def build_start_dictionary(self):
         for tirp in self.tirps:
@@ -156,3 +135,12 @@ class maps_manager (object):
              for sifa_tirp in tirps_relations:
                  self.end_dictionary[sifa_tirp].append(tirp)
 
+
+    def save_raw_inteval(self,entity_id,interval):
+        if entity_id in self.raw_intervals:
+            self.raw_intervals[entity_id].append(interval)
+        else:
+            self.raw_intervals[entity_id]=[interval]
+
+    def get_raw_intervals(self):
+        return self.raw_intervals
