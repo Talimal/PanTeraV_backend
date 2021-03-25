@@ -1,9 +1,9 @@
 
 class TIRP_node_backwards (object):
 
-    def __init__(self, value=None):
+    def __init__(self, value=None,children=[]):
         self.value = value
-        self.children = []
+        self.children = children
 
 
     def get_value(self):
@@ -15,11 +15,17 @@ class TIRP_node_backwards (object):
     def add_child(self,tirp_child):
         self.children.append(tirp_child)
 
-    def get_tirp_by_symbols(self,tirp_symbols):
+    def get_tirp(self,tirp_symbols,tirp_relations):
         if (self.value is None) or (self.value.get_symbols() != tirp_symbols):
             for child in self.children:
-                if child.value.get_symbols() == tirp_symbols[len(tirp_symbols)-child.value.get_size():]:
-                    return child.get_tirp_by_symbols(tirp_symbols=tirp_symbols)
+                n = child.value.get_size()
+                relations_to_check = []
+                if n > 1:
+                    relations_to_check = tirp_relations[len(tirp_relations)-int(n*(n-1)/2):]
+
+                if child.value.get_symbols() == tirp_symbols[len(tirp_symbols)-child.value.get_size():]\
+                        and child.value.get_relations() == relations_to_check:
+                    return child.get_tirp(tirp_symbols=tirp_symbols, tirp_relations=tirp_relations)
         else:
             return self
 

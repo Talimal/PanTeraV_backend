@@ -56,7 +56,13 @@ class Read_file(object):
             if tirp.size == 1:
                 root.add_child(TIRP_node_forward.TIRP_node_forward(value=tirp,children=[]))
             else:
-                father = root.get_tirp_by_symbols(tirp.get_symbols()[:-1])
+                n = tirp.get_size()-1
+                father_symbols = tirp.get_symbols()[:-1]
+                father_relations = []
+                if tirp.get_size()>2:
+                    father_relations = tirp.get_relations()[0:int((n*(n-1))/2)]
+
+                father = root.get_tirp(father_symbols,father_relations)
                 father.add_child(TIRP_node_forward.TIRP_node_forward(value=tirp,children=[]))
         return root
 
@@ -73,10 +79,19 @@ class Read_file(object):
         for index in range(1,self.max_tirp_size + 1):
             for tirp in self.get_tirps_in_size(index):
                 if tirp.size == 1:
-                    root.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp))
+                    root.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp,children=[]))
                 else:
-                    father = root.get_tirp_by_symbols(tirp.get_symbols()[1:])
-                    father.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp))
+                    # father = root.get_tirp_by_symbols(tirp.get_symbols()[1:])
+                    # father.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp))
+
+                    n = tirp.get_size() - 1
+                    father_symbols = tirp.get_symbols()[1:]
+                    father_relations = []
+                    if tirp.get_size() > 2:
+                        father_relations = tirp.get_relations()[tirp.get_size()-int((n*(n-1)/2)):]
+                    father = root.get_tirp(father_symbols, father_relations)
+                    father.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp, children=[]))
+
         return root
 
     def get_tirps(self):
