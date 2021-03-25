@@ -1,4 +1,4 @@
-import TIRP
+import TIRP,TIRP_node_forward,Tirp_node_backwards
 
 class Read_file(object):
 
@@ -11,8 +11,11 @@ class Read_file(object):
         self.NUM_SUPPORT_ENTITIES = 3
         self.MEAN_HORIZONTAL_SUPPORT = 4
         self.OCCURRENCES = 5
+        self.max_tirp_size=0
 
         self.tirps = self.create_tirps()
+        self.tirps_tree = self.create_tirps_tree()
+        self.tirps_tree_backwrds = self.create_tirps_tree_backwards()
 
 
     """gets path to KL output and returns all lines"""
@@ -40,7 +43,47 @@ class Read_file(object):
             occurrences = line_components[self.OCCURRENCES:]
             new_tirp = TIRP.TIRP(size=size, symbols=symbols, relations=relations, num_supporting_entities=num_support_entities, mean_horizontal_support=mean_horizontal_support, occurences=occurrences)
             tirps.append(new_tirp)
+
+            if size>self.max_tirp_size:
+                self.max_tirp_size=size
+
         return tirps
+
+    def create_tirps_tree(self):
+        # dfs scan
+        root = TIRP_node_forward.TIRP_node_forward()
+        for tirp in self.tirps:
+            if tirp.size == 1:
+                root.add_child(TIRP_node_forward.TIRP_node_forward(value=tirp,children=[]))
+            else:
+                father = root.get_tirp_by_symbols(tirp.get_symbols()[:-1])
+                father.add_child(TIRP_node_forward.TIRP_node_forward(value=tirp,children=[]))
+        return root
+
+    def get_tirps_in_size(self,size):
+        result = []
+        for tirp in self.tirps:
+            if tirp.get_size()==size:
+                result.append(tirp)
+        return result
+
+    def create_tirps_tree_backwards(self):
+        # bfs scan
+        root = Tirp_node_backwards.TIRP_node_backwards()
+        for index in range(1,self.max_tirp_size + 1):
+            for tirp in self.get_tirps_in_size(index):
+                if tirp.size == 1:
+                    root.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp))
+                else:
+                    father = root.get_tirp_by_symbols(tirp.get_symbols()[1:])
+                    father.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp))
+        return root
 
     def get_tirps(self):
         return self.tirps
+
+    def get_forward_tree(self):
+        return self.tirps_tree
+
+    def get_backwards_tree(self):
+        return self.tirps_tree_backwrds
