@@ -3,15 +3,15 @@ import os
 
 
 
-def start_project():
+def start_project(dataset_path):
     here = os.path.dirname(os.path.abspath(__file__))
-    filename = os.path.join(here, "./KL_Output.txt")
-    states_file = os.path.join(here, "./symbol_names.json")
-    input_path = os.path.join(here, "./ASL.txt")
-    output_path = os.path.join(here, "./ASL_OUT.txt")
+    filename = os.path.join(here, dataset_path)
+    # states_file = os.path.join(here, "./symbol_names.json")
+    # input_path = os.path.join(here, "./ASL.txt")
+    # output_path = os.path.join(here, "./ASL_OUT.txt")
 
     # KLOutput_path="./KL_Output.txt"
-    file = Read_KL_Output_File.Read_file(KLOutput_path=filename)
+    file = Read_KL_Output_File.Read_file(KLOutput_path=filename+"/KL_Output.txt")
     forward_tree = file.get_forward_tree()
     backwards_tree = file.get_backwards_tree()
     # tirps = file.get_tirps()
@@ -21,8 +21,10 @@ def start_project():
     # tirps_symbols_reader = state_reader.state_reader(states_file=states_file)
     # states_map = tirps_symbols_reader.get_json()
 
-    Create_Forward_Index.Create_Forward_Index(forward_tree=forward_tree)
-    Creare_Backwards_Index.Create_Backwards_Index(backwards_tree=backwards_tree)
+    Create_Forward_Index.Create_Forward_Index(forward_tree=forward_tree,
+                                              forward_index_path=filename+"/forward_index_file.txt")
+    Creare_Backwards_Index.Create_Backwards_Index(backwards_tree=backwards_tree,
+                                                  backwards_index_path=filename+"/backwards_index_file.txt")
 
     # creating the index file and print all dictionaries
     # create_index_file.create_index_file(tirps=tirps, starts_dic=start_dictionary, come_before_dic=come_before)
@@ -33,7 +35,8 @@ def start_project():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    start_project()
+    dataset_path = "Datasets/ASL"
+    start_project(dataset_path)
 
 
 

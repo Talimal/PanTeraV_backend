@@ -1,9 +1,10 @@
-import TIRP,TIRP_node_forward,Tirp_node_backwards
+import TIRP, TIRP_node_forward, Tirp_node_backwards, Symbol_Vector, Symbol_vector_forward
+
 
 class Read_file(object):
 
     def __init__(self, KLOutput_path):
-        self.KLOutput_path=KLOutput_path
+        self.KLOutput_path = KLOutput_path
         self.lines = self.get_lines_from_file(KLOutput_path)
         self.TIRP_SIZE = 0
         self.SYMBOLS = 1
@@ -11,15 +12,25 @@ class Read_file(object):
         self.NUM_SUPPORT_ENTITIES = 3
         self.MEAN_HORIZONTAL_SUPPORT = 4
         self.OCCURRENCES = 5
-        self.max_tirp_size=0
+        self.max_tirp_size = 0
 
         self.tirps = self.create_tirps()
         self.tirps_tree = self.create_tirps_tree()
         self.tirps_tree_backwrds = self.create_tirps_tree_backwards()
-
+        """structure of symbol_vectors:
+         { 
+            (symbol:8,relations:[]) : obj:symbol_vector_obj , 
+            (symbol:23-65,relations:['<']) : obj:symbol_vector_obj
+         
+         }"""
+        self.symbol_vectors = {}
+        self.symbol_vectors_forward = {}
+        self.create_symbol_vectors()
+        self.create_symbol_vectors_forward()
 
     """gets path to KL output and returns all lines"""
-    def get_lines_from_file(self,KLOutput_path):
+
+    def get_lines_from_file(self, KLOutput_path):
         file = open(KLOutput_path, "r")
         # first line is just karma-lego output parameters
         file.readline()
@@ -28,7 +39,66 @@ class Read_file(object):
         file.close()
         return lines
 
+    def create_symbol_vectors(self):
+        for tirp in self.tirps:
+            prev_symbol = None
+            for symbol in tirp.get_symbols():
+                index_symbol = tirp.get_symbols().index(symbol)
+                if index_symbol == 0:
+                    if (symbol, tuple([])) not in self.symbol_vectors:
+                        prev_symbol = Symbol_Vector.Symbol_Vector(symbol=symbol,relation_vector=[], previous_symbol_vectors=[])
+                        self.symbol_vectors[(symbol, tuple([]))] = prev_symbol
+                    else:
+                        prev_symbol = self.symbol_vectors[(symbol, tuple([]))]
+                else:
+                    vector_symbol = []
+                    sum_relations_till_now = 0
+
+                    for index in range(0, index_symbol):
+                        vector_symbol.append(tirp.get_relations()[sum_relations_till_now + index_symbol - index - 1])
+                        sum_relations_till_now += index_symbol - index
+
+                    if (symbol, tuple(vector_symbol)) not in self.symbol_vectors:
+                        new_symbol_vector = Symbol_Vector.Symbol_Vector(symbol=symbol, relation_vector=vector_symbol, previous_symbol_vectors=[])
+                        self.symbol_vectors[(symbol, tuple(vector_symbol))] = new_symbol_vector
+                    else:
+                        new_symbol_vector = self.symbol_vectors[(symbol, tuple(vector_symbol))]
+
+                    new_symbol_vector.add_previous_symbol_vector(prev_symbol)
+                    prev_symbol = new_symbol_vector
+
+
+    def create_symbol_vectors_forward(self):
+        for tirp in self.tirps:
+            prev_symbol = None
+            for symbol in tirp.get_symbols():
+                index_symbol = tirp.get_symbols().index(symbol)
+                if index_symbol == 0:
+                    if (symbol, tuple([])) not in self.symbol_vectors_forward:
+                        prev_symbol = Symbol_vector_forward.Symbol_Vector_forward(symbol=symbol,relation_vector=[], next_symbol_vectors=[])
+                        self.symbol_vectors_forward[(symbol, tuple([]))] = prev_symbol
+                    else:
+                        prev_symbol = self.symbol_vectors_forward[(symbol, tuple([]))]
+                else:
+                    vector_symbol = []
+                    sum_relations_till_now = 0
+
+                    for index in range(0, index_symbol):
+                        vector_symbol.append(tirp.get_relations()[sum_relations_till_now + index_symbol - index - 1])
+                        sum_relations_till_now += index_symbol - index
+
+                    if (symbol, tuple(vector_symbol)) not in self.symbol_vectors_forward:
+                        new_symbol_vector = Symbol_vector_forward.Symbol_Vector_forward(symbol=symbol, relation_vector=vector_symbol, next_symbol_vectors=[])
+                        self.symbol_vectors_forward[(symbol, tuple(vector_symbol))] = new_symbol_vector
+                    else:
+                        new_symbol_vector = self.symbol_vectors_forward[(symbol, tuple(vector_symbol))]
+
+                    prev_symbol.add_next_symbol_vectors(new_symbol_vector)
+                    prev_symbol = new_symbol_vector
+
+
     """for every line from the KL output file, creates a tirp"""
+
     def create_tirps(self):
         tirps = []
         for line in self.lines:
@@ -41,11 +111,13 @@ class Read_file(object):
             num_support_entities = line_components[self.NUM_SUPPORT_ENTITIES]
             mean_horizontal_support = line_components[self.MEAN_HORIZONTAL_SUPPORT]
             occurrences = line_components[self.OCCURRENCES:]
-            new_tirp = TIRP.TIRP(size=size, symbols=symbols, relations=relations, num_supporting_entities=num_support_entities, mean_horizontal_support=mean_horizontal_support, occurences=occurrences)
+            new_tirp = TIRP.TIRP(size=size, symbols=symbols, relations=relations,
+                                 num_supporting_entities=num_support_entities,
+                                 mean_horizontal_support=mean_horizontal_support, occurences=occurrences)
             tirps.append(new_tirp)
 
-            if size>self.max_tirp_size:
-                self.max_tirp_size=size
+            if size > self.max_tirp_size:
+                self.max_tirp_size = size
 
         return tirps
 
@@ -54,32 +126,32 @@ class Read_file(object):
         root = TIRP_node_forward.TIRP_node_forward()
         for tirp in self.tirps:
             if tirp.size == 1:
-                root.add_child(TIRP_node_forward.TIRP_node_forward(value=tirp,children=[]))
+                root.add_child(TIRP_node_forward.TIRP_node_forward(value=tirp, children=[]))
             else:
-                n = tirp.get_size()-1
+                n = tirp.get_size() - 1
                 father_symbols = tirp.get_symbols()[:-1]
                 father_relations = []
-                if tirp.get_size()>2:
-                    father_relations = tirp.get_relations()[0:int((n*(n-1))/2)]
+                if tirp.get_size() > 2:
+                    father_relations = tirp.get_relations()[0:int((n * (n - 1)) / 2)]
 
-                father = root.get_tirp(father_symbols,father_relations)
-                father.add_child(TIRP_node_forward.TIRP_node_forward(value=tirp,children=[]))
+                father = root.get_tirp(father_symbols, father_relations)
+                father.add_child(TIRP_node_forward.TIRP_node_forward(value=tirp, children=[]))
         return root
 
-    def get_tirps_in_size(self,size):
+    def get_tirps_in_size(self, size):
         result = []
         for tirp in self.tirps:
-            if tirp.get_size()==size:
+            if tirp.get_size() == size:
                 result.append(tirp)
         return result
 
     def create_tirps_tree_backwards(self):
         # bfs scan
         root = Tirp_node_backwards.TIRP_node_backwards()
-        for index in range(1,self.max_tirp_size + 1):
+        for index in range(1, self.max_tirp_size + 1):
             for tirp in self.get_tirps_in_size(index):
                 if tirp.size == 1:
-                    root.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp,children=[]))
+                    root.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp, children=[]))
                 else:
                     # father = root.get_tirp_by_symbols(tirp.get_symbols()[1:])
                     # father.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp))
@@ -88,7 +160,7 @@ class Read_file(object):
                     father_symbols = tirp.get_symbols()[1:]
                     father_relations = []
                     if tirp.get_size() > 2:
-                        father_relations = tirp.get_relations()[tirp.get_size()-int((n*(n-1)/2)):]
+                        father_relations = tirp.get_relations()[tirp.get_size() - int((n * (n - 1) / 2)):]
                     father = root.get_tirp(father_symbols, father_relations)
                     father.add_child(Tirp_node_backwards.TIRP_node_backwards(value=tirp, children=[]))
 

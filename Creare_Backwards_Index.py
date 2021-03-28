@@ -3,10 +3,10 @@ from Tirp_node_backwards import TIRP_node_backwards
 
 class Create_Backwards_Index (object):
 
-    def __init__(self, backwards_tree):
+    def __init__(self, backwards_tree,backwards_index_path):
         # output index file path
-        self.index_file = open("./backwards_index_file.txt", "w")
-
+        self.index_file = open(backwards_index_path, "w")
+        self.backwards_index_path = backwards_index_path
         self.backwards_tree = backwards_tree
 
         # creating the index output file
@@ -39,7 +39,7 @@ class Create_Backwards_Index (object):
     def deserialize_backwards_tree(self):
         # decoded_team = TIRP_node_forward(**json.loads(json_data))
 
-        with open("./backwards_index_file.txt", "r") as my_file_read:
+        with open(self.backwards_index_path, "r") as my_file_read:
             my_second_list = json.dumps(json.load(my_file_read))
             my_second_list = TIRP_node_backwards(**json.loads(my_second_list))
             print(my_second_list)

@@ -4,14 +4,15 @@ from types import SimpleNamespace
 
 class Create_Forward_Index (object):
 
-    def __init__(self, forward_tree):
+    def __init__(self, forward_tree, forward_index_path):
         # output index file path
-        self.index_file = open("./forward_index_file.txt", "w")
+        self.index_file = open(forward_index_path, "w")
 
         self.forward_tree = forward_tree
 
         # creating the index output file
         # self.write_to_index_file(self.forward_tree)
+        self.forward_index_path = forward_index_path
         self.serialize_forward_tree(self.forward_tree)
         self.index_file.close()
 
@@ -41,7 +42,7 @@ class Create_Forward_Index (object):
     def deserialize_forward_tree(self):
         # decoded_team = TIRP_node_forward(**json.loads(json_data))
 
-        with open("./forward_index_file.txt", "r") as my_file_read:
+        with open(self.forward_index_path, "r") as my_file_read:
             my_second_list = json.dumps(json.load(my_file_read))
             my_second_list = TIRP_node_forward(**json.loads(my_second_list))
             print(my_second_list)
