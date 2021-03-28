@@ -1,3 +1,5 @@
+"""this class is responsible for holding a tirps tree that
+all the children of a certain TIRP starts with this very TIRP"""
 
 class TIRP_node_forward (object):
 

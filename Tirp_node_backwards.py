@@ -1,3 +1,5 @@
+"""this class is responsible for holding a tirps tree that is arranged as in backwards mining
+all the children of a certain TIRP ends with this very TIRP"""
 
 class TIRP_node_backwards (object):
 
