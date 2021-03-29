@@ -36,7 +36,7 @@ class TIRP (object):
         return str
 
     """gets a list of relations and returns a string (like toString())"""
-    def string_relations(self,relations):
+    def string_relations(self, relations):
         if len(relations)>0:
             str = relations[0]+"."
             for i in range(1,len(relations),1):
@@ -44,6 +44,15 @@ class TIRP (object):
             return str
         else:
             return ""
+
+    def get_vector_in_size(self, vector_size):
+        vector_symbol = []
+        sum_relations_till_now = 0
+        index_symbol = vector_size
+        for index in range(0, index_symbol):
+            vector_symbol.append(self.relations[sum_relations_till_now + index_symbol - index - 1])
+            sum_relations_till_now += index_symbol - index
+        return vector_symbol
 
     def __str__(self):
         a=self.convert_list_to_string(self.occurences)

@@ -1,4 +1,4 @@
-import TIRP, TIRP_node_forward, Tirp_node_backwards, Symbol_Vector, Symbol_vector_forward
+import TIRP, TIRP_node_forward, Tirp_node_backwards, Symbol_Vector, Symbol_vector_forward, relations_vector
 
 
 class Read_file(object):
@@ -31,6 +31,9 @@ class Read_file(object):
         self.symbol_vectors_forward = {}
         self.create_symbol_vectors()
         self.create_symbol_vectors_forward()
+
+        self.relations_vectors={}
+        self.create_relations_vectors()
 
     """gets path to KL output and returns all lines"""
 
@@ -75,6 +78,33 @@ class Read_file(object):
 
                     new_symbol_vector.add_previous_symbol_vector(prev_symbol)
                     prev_symbol = new_symbol_vector
+
+    def create_relations_vectors(self):
+        for tirp in self.tirps:
+            prev_symbol = None
+            for symbol in tirp.get_symbols():
+                index_symbol = tirp.get_symbols().index(symbol)
+                if index_symbol == 0:
+                    if (symbol, tuple([])) not in self.relations_vectors:
+                        prev_symbol = relations_vector.Relations_Vector(symbol=symbol, relation_vector=[],
+                                                                  prefix_tirps={}, next_tirps={})
+                        self.relations_vectors[(symbol, tuple([]))] = prev_symbol
+                    else:
+                        prev_symbol = self.relations_vectors[(symbol, tuple([]))]
+                else:
+                    vector_symbol = tirp.get_vector_in_size(index_symbol)
+
+                    if (symbol, tuple(vector_symbol)) not in self.relations_vectors:
+                        new_symbol_vector = relations_vector.Relations_Vector(symbol=symbol, relation_vector=vector_symbol,
+                                                                        prefix_tirps={}, next_tirps={})
+                        self.relations_vectors[(symbol, tuple(vector_symbol))] = new_symbol_vector
+                    else:
+                        new_symbol_vector = self.relations_vectors[(symbol, tuple(vector_symbol))]
+
+                    new_symbol_vector.add_to_prefix_tirps(relations_vector=prev_symbol,tirp=tirp)
+                    prev_symbol.add_to_next_tirps(relations_vector=new_symbol_vector,tirp=tirp)
+                    prev_symbol = new_symbol_vector
+
 
     """creates a dictionary that each entry is a tuple of symbol and
      it's relations and value is the vectors after it"""
@@ -196,3 +226,6 @@ class Read_file(object):
 
     def get_backwards_tree(self):
         return self.tirps_tree_backwrds
+
+    def get_relations_vectors(self):
+        return self.relations_vectors
