@@ -15,6 +15,7 @@ def start_project(dataset_path):
     forward_tree = file.get_forward_tree()
     backwards_tree = file.get_backwards_tree()
     relations_vectors = file.get_relations_vectors()
+    tirps = file.get_tirps()
 
     # tirps = file.get_tirps()
     # manager = maps_manager.maps_manager(tirps=tirps)
@@ -33,6 +34,9 @@ def start_project(dataset_path):
     # ParseInput.parse_kl_input(maps_manager=manager,input_path=input_path,output_path=output_path)
     # raw_data = manager.get_raw_intervals()
     # return [manager,states_map,raw_data]
+
+    return forward_tree,backwards_tree,relations_vectors,tirps
+
 
 
 # Press the green button in the gutter to run the script.

@@ -6,18 +6,20 @@ from types import SimpleNamespace
 
 class Create_Vectors_Index (object):
 
-    def __init__(self, relations_vectors, vectors_index_path):
+    def __init__(self, relations_vectors=None, vectors_index_path=""):
         # output index file path
-        self.index_file = open(vectors_index_path, "w")
+        if vectors_index_path!="":
+            self.index_file = open(vectors_index_path, "w")
 
         self.relations_vectors = relations_vectors
 
         # creating the index output file
         self.vectors_index_path = vectors_index_path
-        self.serialize_vectors(self.relations_vectors)
-        self.index_file.close()
+        if relations_vectors is not None:
+            self.serialize_vectors(self.relations_vectors)
+            self.index_file.close()
 
-        self.deserialize_vectors()
+            self.deserialize_vectors()
 
     """the relation_vector object is too complicated to be serialized to file
         so i casting it to a json that the key is a string of the symbol with the relations
@@ -40,11 +42,15 @@ class Create_Vectors_Index (object):
             final_string = final_string + str(element) + ","
         return final_string[:-1]
 
+    def get_json_from_data(self,vectors):
+        a = self.remap_keys(vectors)
+        json_data = json.dumps(a, default=lambda o: o.__dict__, indent=4)
+        return json_data
+
     """this method gets the original json of key: (symbol,relations) value: relation_vector object and
         serialize it to an index file"""
     def serialize_vectors(self,vectors):
-        a = self.remap_keys(vectors)
-        json_data = json.dumps(a, default=lambda o : o.__dict__, indent=4)
+        json_data = self.get_json_from_data(vectors=vectors)
         self.index_file.write(json_data)
 
     """this method gets a relation_vector object and returns it (symbol,relations) as tuple"""
