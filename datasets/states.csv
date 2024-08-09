@@ -1,0 +1,67 @@
+StateID,TemporalPropertyID,BinID,BinLow,BinHigh,BinLowScore,Method,TemporalPropertyName,BinLabel
+1,1,0,-inf,1.0,,EqualFrequency,Abbey Pain Scale.count,low
+2,1,1,1.0,inf,,EqualFrequency,Abbey Pain Scale.count,high
+3,47,0,-inf,59.3,,EqualFrequency,weight_measurement,low
+4,47,1,59.3,inf,,EqualFrequency,weight_measurement,high
+5,48,0,-inf,96.0,,EqualFrequency,blood_o2_measurement,low
+6,48,1,96.0,inf,,EqualFrequency,blood_o2_measurement,high
+7,49,0,-inf,11.966666666666669,,EqualFrequency,blood_sugar_measurement,low
+8,49,1,11.966666666666669,inf,,EqualFrequency,blood_sugar_measurement,high
+9,50,0,-inf,71.0,,EqualFrequency,pulse_measurement,low
+10,50,1,71.0,inf,,EqualFrequency,pulse_measurement,high
+11,51,0,-inf,18.0,,EqualFrequency,respiration_measurement,low
+12,51,1,18.0,inf,,EqualFrequency,respiration_measurement,high
+13,52,0,-inf,36.5,,EqualFrequency,temperature_measurement,low
+14,52,1,36.5,inf,,EqualFrequency,temperature_measurement,high
+15,53,0,-inf,1.6228,,EqualFrequency,Hieght,low
+16,53,1,1.6228,inf,,EqualFrequency,Hieght,high
+17,54,0,-inf,1.5,,EqualFrequency,medical_routin_regular_observed,low
+18,54,1,1.5,inf,,EqualFrequency,medical_routin_regular_observed,high
+19,55,0,-inf,1.0,,EqualFrequency,medical_routin_special_observed,low
+20,55,1,1.0,inf,,EqualFrequency,medical_routin_special_observed,high
+21,56,0,-inf,2.333333333333333,,EqualFrequency,medical_routin_regular_intervene,low
+22,56,1,2.333333333333333,inf,,EqualFrequency,medical_routin_regular_intervene,high
+23,57,0,-inf,1.0,,EqualFrequency,medical_routin_uncertain_intervene,low
+24,57,1,1.0,inf,,EqualFrequency,medical_routin_uncertain_intervene,high
+25,58,0,-inf,1.0,,EqualFrequency,medical_routin_special_intervene,low
+26,58,1,1.0,inf,,EqualFrequency,medical_routin_special_intervene,high
+27,59,0,-inf,1.0,,EqualFrequency,medical_uncertain_special,low
+28,59,1,1.0,inf,,EqualFrequency,medical_uncertain_special,high
+29,60,0,-inf,1.0,,EqualFrequency,medical_urgent_special_observed,low
+30,60,1,1.0,inf,,EqualFrequency,medical_urgent_special_observed,high
+31,61,0,-inf,1.0,,EqualFrequency,medical_urgent_special_intervene,low
+32,61,1,1.0,inf,,EqualFrequency,medical_urgent_special_intervene,high
+33,62,0,-inf,6.0,,EqualFrequency,Fluid,low
+34,62,1,6.0,inf,,EqualFrequency,Fluid,high
+35,63,0,-inf,3.333333333333333,,EqualFrequency,Food,low
+36,63,1,3.333333333333333,inf,,EqualFrequency,Food,high
+37,64,0,-inf,1.6666666666666667,,EqualFrequency, Nutrition watch,low
+38,64,1,1.6666666666666667,inf,,EqualFrequency, Nutrition watch,high
+39,65,0,-inf,2.0,,EqualFrequency,Fluid Watch,low
+40,65,1,2.0,inf,,EqualFrequency,Fluid Watch,high
+41,66,0,-inf,2.0,,EqualFrequency,Toilet,low
+42,66,1,2.0,inf,,EqualFrequency,Toilet,high
+43,67,0,-inf,1.0,,EqualFrequency,Emotions,low
+44,67,1,1.0,inf,,EqualFrequency,Emotions,high
+45,68,0,-inf,1.5,,EqualFrequency,Positive Communication,low
+46,68,1,1.5,inf,,EqualFrequency,Positive Communication,high
+47,69,0,-inf,1.3333333333333333,,EqualFrequency,Entertainer,low
+48,69,1,1.3333333333333333,inf,,EqualFrequency,Entertainer,high
+49,70,0,-inf,1.0,,EqualFrequency,Smooking,low
+50,70,1,1.0,inf,,EqualFrequency,Smooking,high
+51,71,0,-inf,1.3333333333333333,,EqualFrequency,Exrcise,low
+52,71,1,1.3333333333333333,inf,,EqualFrequency,Exrcise,high
+53,72,0,-inf,5.212698412698413,,EqualFrequency,Appetite,low
+54,72,1,5.212698412698413,inf,,EqualFrequency,Appetite,high
+55,73,0,-inf,201.0,,EqualFrequency,Fluid_Amount,low
+56,73,1,201.0,inf,,EqualFrequency,Fluid_Amount,high
+57,74,0,-inf,3.274027777777777,,EqualFrequency,Happiness,low
+58,74,1,3.274027777777777,inf,,EqualFrequency,Happiness,high
+59,75,0,-inf,1.55,,EqualFrequency,Illness,low
+60,75,1,1.55,inf,,EqualFrequency,Illness,high
+61,76,0,-inf,3.125,,EqualFrequency,MobilityAssistance,low
+62,76,1,3.125,inf,,EqualFrequency,MobilityAssistance,high
+63,77,0,-inf,2.0,,EqualFrequency,Diet,low
+64,77,1,2.0,inf,,EqualFrequency,Diet,high
+65,78,0,-inf,0.0,,EqualFrequency,Fall,low
+66,78,1,0.0,inf,,EqualFrequency,Fall,high

@@ -1,0 +1,301 @@
+id,Gender,Age Range,Home care rating,Monitoring frequency
+1959,Female,85-90,1,Medium
+3119,Male,65-70,2,Medium
+992,Female,65-70,0,Low
+68,Female,75-80,1,High
+2517,Male,75-80,2,Low
+4595,Male,65-70,0,Very high
+6546,Male,85-90,2,Low
+510,Male,95-100,2,Very high
+51,Male,65-70,0,Medium
+780,Female,95-100,1,High
+3768,Male,95-100,1,High
+6968,Male,75-80,1,Low
+581,Female,95-100,1,Medium
+3075,Female,85-90,3,Low
+1590,Male,65-70,2,Very high
+3444,Female,85-90,3,High
+5453,Male,95-100,0,Low
+8346,Male,85-90,0,Medium
+5439,Male,75-80,0,Medium
+352,Female,65-70,1,Low
+871,Male,65-70,2,Low
+873,Male,85-90,3,Very high
+1852,Male,65-70,3,Low
+940,Male,75-80,4,Low
+6263,Male,75-80,3,High
+363,Male,95-100,1,High
+487,Female,85-90,0,Medium
+1794,Male,65-70,0,High
+6635,Male,95-100,3,Medium
+6935,Male,65-70,0,Very high
+3913,Female,75-80,4,High
+31,Female,95-100,4,High
+4965,Female,65-70,4,Medium
+1120,Male,95-100,1,High
+17,Male,75-80,1,High
+7524,Female,75-80,2,High
+4165,Female,75-80,0,Medium
+6733,Female,85-90,1,Low
+750,Female,75-80,3,High
+4007,Female,65-70,3,Very high
+1255,Male,65-70,0,Very high
+2332,Male,85-90,0,High
+2651,Male,75-80,1,High
+2749,Male,75-80,1,High
+4361,Male,75-80,4,Low
+4876,Male,75-80,1,High
+6534,Male,75-80,2,Low
+3348,Male,75-80,1,Medium
+2102,Female,65-70,2,Medium
+492,Female,65-70,1,High
+2123,Female,95-100,4,Medium
+4538,Male,75-80,0,Medium
+4514,Male,75-80,0,Low
+7283,Female,95-100,0,Medium
+1986,Female,95-100,1,Low
+1071,Female,65-70,3,Low
+194,Male,65-70,0,Very high
+1023,Female,75-80,0,Medium
+1,Male,95-100,1,High
+1997,Female,95-100,1,Medium
+3667,Female,95-100,1,High
+3369,Female,65-70,3,Very high
+4235,Male,75-80,1,Medium
+4335,Female,95-100,3,Medium
+4467,Male,85-90,1,Very high
+281,Female,85-90,1,Very high
+1911,Male,85-90,2,High
+8093,Female,75-80,3,Very high
+6216,Female,65-70,1,Medium
+8163,Male,75-80,3,Low
+8233,Male,65-70,2,Medium
+377,Female,95-100,0,High
+682,Male,85-90,0,High
+1353,Male,65-70,4,High
+5550,Female,95-100,2,Medium
+496,Female,95-100,1,Low
+105,Male,75-80,3,Medium
+1049,Female,95-100,4,Very high
+1380,Female,95-100,2,Low
+2810,Male,75-80,4,Very high
+2400,Female,65-70,4,High
+118,Male,75-80,2,Low
+657,Female,75-80,4,Very high
+1143,Female,75-80,1,Low
+2515,Male,75-80,3,High
+2813,Male,65-70,2,Medium
+542,Female,95-100,4,Medium
+7400,Female,65-70,2,High
+202,Male,75-80,3,High
+6643,Female,95-100,0,High
+893,Male,85-90,0,Low
+12,Female,95-100,1,Very high
+7853,Male,75-80,1,Medium
+3541,Male,85-90,3,Very high
+8336,Female,95-100,0,Very high
+3203,Female,75-80,4,Low
+8434,Male,85-90,1,Low
+60,Male,65-70,0,Low
+4554,Male,75-80,0,Very high
+733,Male,95-100,0,Low
+2010,Male,65-70,1,Very high
+2770,Female,65-70,3,Low
+3269,Female,95-100,1,Low
+6872,Male,65-70,0,High
+2973,Female,85-90,1,Very high
+7694,Female,75-80,4,Medium
+7516,Female,65-70,1,Medium
+7688,Female,65-70,1,Low
+7103,Female,85-90,1,Very high
+1192,Female,65-70,1,Medium
+995,Male,75-80,3,Low
+1392,Male,65-70,2,Medium
+3589,Male,65-70,1,Medium
+7873,Female,95-100,4,Medium
+2183,Male,65-70,4,Medium
+419,Male,95-100,1,Medium
+1252,Female,75-80,1,Low
+1152,Female,95-100,3,High
+8154,Female,65-70,2,Low
+2349,Female,95-100,3,Very high
+485,Female,75-80,2,Very high
+856,Female,95-100,4,High
+1783,Female,65-70,3,High
+75,Female,95-100,1,Medium
+2009,Female,65-70,4,High
+1346,Female,75-80,2,Low
+1720,Male,75-80,3,Medium
+4072,Male,65-70,4,Very high
+5757,Female,65-70,3,Low
+2125,Female,65-70,4,Medium
+5972,Female,95-100,3,Very high
+6786,Male,75-80,0,High
+6844,Female,65-70,4,High
+1714,Male,95-100,4,Low
+974,Female,85-90,2,High
+1091,Male,85-90,2,High
+117,Female,75-80,1,Low
+238,Male,85-90,2,Low
+3896,Female,85-90,4,Medium
+2802,Male,95-100,2,Very high
+6922,Male,75-80,1,Low
+4186,Female,85-90,1,High
+5336,Male,85-90,3,Low
+827,Male,65-70,3,Very high
+1923,Male,65-70,1,Low
+8235,Female,75-80,2,High
+720,Female,75-80,2,Low
+1617,Male,75-80,2,Medium
+3374,Male,95-100,1,Very high
+7,Female,75-80,0,Low
+4061,Male,65-70,3,High
+937,Female,95-100,1,Low
+6650,Female,75-80,4,Medium
+4275,Male,95-100,0,Medium
+43,Female,65-70,3,Very high
+2738,Female,75-80,4,Low
+2022,Male,95-100,0,Low
+796,Female,95-100,1,Low
+16,Male,75-80,3,High
+6700,Male,65-70,2,Low
+4606,Male,95-100,4,Medium
+7737,Female,65-70,1,Very high
+2136,Male,65-70,0,Low
+5153,Female,85-90,4,Medium
+5943,Male,65-70,4,Very high
+181,Male,85-90,2,High
+203,Female,95-100,0,High
+6880,Male,85-90,2,Medium
+2849,Female,75-80,1,High
+398,Female,95-100,1,Medium
+4079,Female,75-80,2,High
+107,Female,85-90,1,Low
+78,Female,75-80,4,Very high
+387,Male,85-90,0,High
+4299,Female,95-100,4,Low
+8334,Female,65-70,2,Medium
+274,Male,85-90,0,Medium
+3339,Female,95-100,0,Medium
+713,Male,65-70,0,Low
+6211,Female,65-70,2,Low
+1569,Male,95-100,1,Low
+7661,Male,75-80,3,Low
+2026,Male,65-70,3,Low
+2632,Male,65-70,4,High
+3575,Male,75-80,4,Very high
+1780,Male,75-80,2,Low
+6353,Female,85-90,3,Low
+2190,Male,65-70,2,Low
+2917,Male,85-90,1,Medium
+624,Female,95-100,3,Medium
+941,Male,65-70,2,Low
+1825,Female,65-70,2,Very high
+2184,Female,85-90,3,Medium
+5482,Male,75-80,3,Very high
+3428,Female,75-80,2,High
+1025,Female,95-100,2,Very high
+3849,Female,75-80,4,Medium
+909,Male,75-80,0,High
+191,Female,65-70,0,High
+8418,Male,75-80,1,Very high
+3101,Male,95-100,1,High
+954,Female,75-80,4,High
+744,Male,95-100,4,High
+4214,Male,95-100,2,Very high
+573,Female,65-70,2,High
+2251,Female,75-80,4,Very high
+2561,Female,95-100,1,Low
+5563,Female,95-100,3,Medium
+3911,Female,95-100,3,Low
+2460,Male,95-100,3,Low
+6333,Male,65-70,2,Medium
+1982,Female,95-100,3,Very high
+7134,Female,75-80,4,Low
+4256,Male,75-80,3,Very high
+622,Female,95-100,4,Very high
+7178,Female,65-70,3,High
+7702,Female,65-70,1,Very high
+1053,Male,75-80,0,Medium
+169,Female,85-90,2,Medium
+1623,Female,75-80,4,Very high
+1209,Male,75-80,2,High
+106,Female,85-90,1,Very high
+2761,Male,85-90,1,Low
+3226,Male,85-90,4,High
+1073,Female,65-70,0,Very high
+1577,Female,95-100,3,Medium
+298,Male,65-70,2,High
+6573,Male,75-80,2,Very high
+3936,Female,65-70,0,Medium
+2476,Female,75-80,3,Very high
+5883,Male,75-80,4,Low
+934,Male,75-80,0,Low
+4518,Female,85-90,2,High
+6730,Male,95-100,3,High
+643,Male,65-70,3,High
+282,Female,85-90,2,Low
+476,Male,65-70,1,Low
+6580,Female,65-70,4,Very high
+3069,Female,65-70,1,Very high
+19,Male,85-90,3,Very high
+7323,Female,75-80,1,Very high
+3758,Female,95-100,4,High
+279,Female,95-100,3,High
+5645,Female,95-100,1,Low
+22,Female,95-100,0,Low
+2432,Male,85-90,3,High
+592,Female,85-90,1,Very high
+509,Male,75-80,0,High
+1634,Female,85-90,2,High
+7573,Female,75-80,2,Low
+1001,Male,75-80,2,Low
+1314,Female,75-80,2,Very high
+6641,Female,65-70,4,High
+8285,Male,85-90,1,Low
+263,Female,65-70,1,High
+7885,Male,85-90,1,High
+3026,Male,65-70,1,Medium
+5566,Female,65-70,3,Low
+4029,Female,85-90,4,Medium
+1243,Female,95-100,1,Low
+4,Female,85-90,1,Very high
+2236,Male,95-100,2,Low
+860,Female,95-100,1,Low
+1407,Female,65-70,3,Low
+5067,Male,75-80,3,Medium
+6311,Female,65-70,2,High
+3392,Male,65-70,4,High
+5910,Male,65-70,1,Low
+3010,Male,75-80,0,Medium
+415,Male,75-80,0,High
+5527,Male,95-100,3,High
+7477,Female,65-70,0,Low
+7205,Female,85-90,1,Low
+811,Female,75-80,1,Low
+1265,Female,75-80,4,Medium
+6514,Female,85-90,1,High
+383,Male,85-90,4,High
+14,Male,75-80,4,Low
+3304,Female,75-80,1,Low
+3841,Female,65-70,1,Low
+3505,Female,95-100,3,High
+1080,Female,75-80,3,Medium
+3177,Female,65-70,3,Medium
+6644,Male,75-80,4,Low
+988,Female,65-70,0,Medium
+201,Male,95-100,3,Medium
+410,Female,95-100,4,High
+881,Male,85-90,1,Very high
+1404,Male,95-100,0,Very high
+2156,Male,95-100,0,Medium
+4451,Female,75-80,3,Very high
+4815,Female,85-90,3,Low
+6048,Male,75-80,2,Low
+545,Male,65-70,0,Low
+606,Male,65-70,3,Medium
+3381,Female,85-90,3,Very high
+2507,Female,95-100,1,Very high
+414,Female,75-80,4,Very high
+3420,Male,85-90,1,Very high
+5864,Male,65-70,0,Very high

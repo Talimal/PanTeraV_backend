@@ -1,0 +1,2412 @@
+{
+    "next": {
+        "null": [
+            {
+                "size": 1,
+                "symbols": [
+                    "25"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "291",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 10.74914089347079,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 291,
+                "vertical_support_1": 0,
+                "mean_duration_0": 1.71,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 1.71,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -1.71,
+                    0.0
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 141
+                        },
+                        {
+                            "Female": 150
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 71
+                        },
+                        {
+                            "85-90": 52
+                        },
+                        {
+                            "75-80": 87
+                        },
+                        {
+                            "65-70": 81
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 77
+                        },
+                        {
+                            "0": 50
+                        },
+                        {
+                            "4": 50
+                        },
+                        {
+                            "3": 60
+                        },
+                        {
+                            "2": 54
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 75
+                        },
+                        {
+                            "Very high": 62
+                        },
+                        {
+                            "Low": 87
+                        },
+                        {
+                            "Medium": 67
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 1.3966764832182899,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 1.9435297023487206,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 9.65540513443543,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 11.842876652506149,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "27": [
+            {
+                "size": 2,
+                "symbols": [
+                    "25",
+                    "27"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low",
+                    "medical_uncertain_special.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "195",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.98974358974359,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 195,
+                "vertical_support_1": 0,
+                "mean_duration_0": 3.4,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 2.62,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -2.62,
+                    0.0,
+                    -1.54,
+                    0.41
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 97
+                        },
+                        {
+                            "Female": 98
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 53
+                        },
+                        {
+                            "75-80": 58
+                        },
+                        {
+                            "85-90": 36
+                        },
+                        {
+                            "65-70": 48
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 56
+                        },
+                        {
+                            "0": 32
+                        },
+                        {
+                            "3": 40
+                        },
+                        {
+                            "2": 35
+                        },
+                        {
+                            "4": 32
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 57
+                        },
+                        {
+                            "Low": 53
+                        },
+                        {
+                            "Very high": 42
+                        },
+                        {
+                            "Medium": 43
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 2.549982203366867,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 3.480787027402364,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.6591915079590325,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.320295671528147,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "45": [
+            {
+                "size": 2,
+                "symbols": [
+                    "25",
+                    "45"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low",
+                    "Positive Communication.low"
+                ],
+                "relations": [
+                    "<"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "184",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.8369565217391304,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 184,
+                "vertical_support_1": 0,
+                "mean_duration_0": 7.7,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 1.83,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -1.83,
+                    0.0,
+                    2.0,
+                    5.88
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 92
+                        },
+                        {
+                            "Female": 92
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 44
+                        },
+                        {
+                            "85-90": 36
+                        },
+                        {
+                            "75-80": 54
+                        },
+                        {
+                            "65-70": 50
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 56
+                        },
+                        {
+                            "0": 29
+                        },
+                        {
+                            "3": 39
+                        },
+                        {
+                            "4": 27
+                        },
+                        {
+                            "2": 33
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 47
+                        },
+                        {
+                            "Very high": 41
+                        },
+                        {
+                            "Low": 53
+                        },
+                        {
+                            "Medium": 43
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 6.6500525755719515,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 8.7847300331237,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.5027329555860933,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.1711800878921674,
+                "hs_confidence_interval_high_class_1": 0
+            },
+            {
+                "size": 2,
+                "symbols": [
+                    "25",
+                    "45"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low",
+                    "Positive Communication.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "202",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 3.217821782178218,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 202,
+                "vertical_support_1": 0,
+                "mean_duration_0": 4.11,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 2.29,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -2.29,
+                    0.0,
+                    -1.56,
+                    1.59
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 96
+                        },
+                        {
+                            "Female": 106
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 49
+                        },
+                        {
+                            "85-90": 34
+                        },
+                        {
+                            "75-80": 64
+                        },
+                        {
+                            "65-70": 55
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 58
+                        },
+                        {
+                            "0": 29
+                        },
+                        {
+                            "3": 40
+                        },
+                        {
+                            "2": 41
+                        },
+                        {
+                            "4": 34
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 54
+                        },
+                        {
+                            "Very high": 40
+                        },
+                        {
+                            "Low": 64
+                        },
+                        {
+                            "Medium": 44
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 3.477990914864369,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 4.611117996026719,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.7743677788619427,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.6612757854944933,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "47": [
+            {
+                "size": 2,
+                "symbols": [
+                    "25",
+                    "47"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low",
+                    "Entertainer.low"
+                ],
+                "relations": [
+                    "<"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "200",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.905,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 200,
+                "vertical_support_1": 0,
+                "mean_duration_0": 7.25,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 1.87,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -1.87,
+                    0.0,
+                    2.0,
+                    5.37
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 97
+                        },
+                        {
+                            "Female": 103
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 53
+                        },
+                        {
+                            "85-90": 39
+                        },
+                        {
+                            "75-80": 57
+                        },
+                        {
+                            "65-70": 51
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 60
+                        },
+                        {
+                            "0": 34
+                        },
+                        {
+                            "3": 38
+                        },
+                        {
+                            "2": 37
+                        },
+                        {
+                            "4": 31
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 56
+                        },
+                        {
+                            "Very high": 40
+                        },
+                        {
+                            "Low": 62
+                        },
+                        {
+                            "Medium": 42
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 6.411111792475595,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 8.458888207524403,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.5885939765771018,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.221406023422898,
+                "hs_confidence_interval_high_class_1": 0
+            },
+            {
+                "size": 2,
+                "symbols": [
+                    "25",
+                    "47"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low",
+                    "Entertainer.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "220",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 3.0954545454545452,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 220,
+                "vertical_support_1": 0,
+                "mean_duration_0": 4.51,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 2.39,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -2.39,
+                    0.0,
+                    -1.54,
+                    1.84
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 107
+                        },
+                        {
+                            "Female": 113
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 57
+                        },
+                        {
+                            "85-90": 40
+                        },
+                        {
+                            "75-80": 58
+                        },
+                        {
+                            "65-70": 65
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 60
+                        },
+                        {
+                            "0": 40
+                        },
+                        {
+                            "3": 44
+                        },
+                        {
+                            "2": 38
+                        },
+                        {
+                            "4": 38
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 62
+                        },
+                        {
+                            "Very high": 42
+                        },
+                        {
+                            "Low": 65
+                        },
+                        {
+                            "Medium": 51
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 3.6562137863841895,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 5.243786213615811,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.7368306321250744,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.454078458784016,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "51": [
+            {
+                "size": 2,
+                "symbols": [
+                    "25",
+                    "51"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low",
+                    "Exrcise.low"
+                ],
+                "relations": [
+                    "<"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "197",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.786802030456853,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 197,
+                "vertical_support_1": 0,
+                "mean_duration_0": 6.68,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 1.85,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -1.85,
+                    0.0,
+                    2.0,
+                    4.83
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Female": 99
+                        },
+                        {
+                            "Male": 98
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "85-90": 35
+                        },
+                        {
+                            "75-80": 64
+                        },
+                        {
+                            "95-100": 39
+                        },
+                        {
+                            "65-70": 59
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 55
+                        },
+                        {
+                            "0": 27
+                        },
+                        {
+                            "4": 33
+                        },
+                        {
+                            "3": 43
+                        },
+                        {
+                            "2": 39
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "Very high": 47
+                        },
+                        {
+                            "Low": 62
+                        },
+                        {
+                            "High": 50
+                        },
+                        {
+                            "Medium": 38
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 5.938027893498204,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 7.087352817161695,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.4356957626015645,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.137908298312141,
+                "hs_confidence_interval_high_class_1": 0
+            },
+            {
+                "size": 2,
+                "symbols": [
+                    "25",
+                    "51"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low",
+                    "Exrcise.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "212",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.9292452830188678,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 212,
+                "vertical_support_1": 0,
+                "mean_duration_0": 4.02,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 2.44,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -2.44,
+                    0.0,
+                    -1.55,
+                    1.29
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 100
+                        },
+                        {
+                            "Female": 112
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 53
+                        },
+                        {
+                            "85-90": 38
+                        },
+                        {
+                            "75-80": 65
+                        },
+                        {
+                            "65-70": 56
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 60
+                        },
+                        {
+                            "0": 37
+                        },
+                        {
+                            "4": 39
+                        },
+                        {
+                            "3": 41
+                        },
+                        {
+                            "2": 35
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 57
+                        },
+                        {
+                            "Very high": 43
+                        },
+                        {
+                            "Low": 60
+                        },
+                        {
+                            "Medium": 52
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 2.9603371886423853,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 3.9358892264519545,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.542465874816206,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.3160246912215294,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "53": [
+            {
+                "size": 2,
+                "symbols": [
+                    "25",
+                    "53"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low",
+                    "Appetite.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "182",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.521978021978022,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 182,
+                "vertical_support_1": 0,
+                "mean_duration_0": 10.35,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 2.22,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -2.22,
+                    0.0,
+                    -1.53,
+                    7.87
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Female": 94
+                        },
+                        {
+                            "Male": 88
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "85-90": 31
+                        },
+                        {
+                            "75-80": 58
+                        },
+                        {
+                            "95-100": 47
+                        },
+                        {
+                            "65-70": 46
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 55
+                        },
+                        {
+                            "0": 30
+                        },
+                        {
+                            "4": 29
+                        },
+                        {
+                            "3": 35
+                        },
+                        {
+                            "2": 33
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "Very high": 42
+                        },
+                        {
+                            "Low": 57
+                        },
+                        {
+                            "High": 40
+                        },
+                        {
+                            "Medium": 43
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 5.501669341100893,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 15.025803186371636,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.1888850861182085,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 2.8550709578378353,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ]
+    },
+    "prefix": {
+        "21": [
+            {
+                "size": 2,
+                "symbols": [
+                    "21",
+                    "25"
+                ],
+                "symbols_names": [
+                    "medical_routin_regular_intervene.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "206",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 4.975728155339806,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 206,
+                "vertical_support_1": 0,
+                "mean_duration_0": 43.92,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 43.73,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -43.73,
+                    0.0,
+                    -21.03,
+                    -19.38
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 100
+                        },
+                        {
+                            "Female": 106
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 51
+                        },
+                        {
+                            "85-90": 39
+                        },
+                        {
+                            "75-80": 58
+                        },
+                        {
+                            "65-70": 58
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 55
+                        },
+                        {
+                            "0": 33
+                        },
+                        {
+                            "4": 33
+                        },
+                        {
+                            "3": 49
+                        },
+                        {
+                            "2": 36
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 55
+                        },
+                        {
+                            "Very high": 43
+                        },
+                        {
+                            "Low": 59
+                        },
+                        {
+                            "Medium": 49
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 30.04671724976513,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 48.23483614829312,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 4.334718248366091,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 5.616738062313521,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "22": [
+            {
+                "size": 2,
+                "symbols": [
+                    "22",
+                    "25"
+                ],
+                "symbols_names": [
+                    "medical_routin_regular_intervene.high",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "187",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 6.818181818181818,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 187,
+                "vertical_support_1": 0,
+                "mean_duration_0": 139.91,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 139.67,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -139.67,
+                    0.0,
+                    -67.66,
+                    -65.89
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 87
+                        },
+                        {
+                            "Female": 100
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 48
+                        },
+                        {
+                            "85-90": 34
+                        },
+                        {
+                            "75-80": 59
+                        },
+                        {
+                            "65-70": 46
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 49
+                        },
+                        {
+                            "4": 33
+                        },
+                        {
+                            "3": 37
+                        },
+                        {
+                            "0": 33
+                        },
+                        {
+                            "2": 35
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 46
+                        },
+                        {
+                            "Very high": 35
+                        },
+                        {
+                            "Low": 62
+                        },
+                        {
+                            "Medium": 44
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 91.75996346269004,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 147.38442156404793,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 5.590970373178196,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 8.04539326318544,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "null": [
+            {
+                "size": 1,
+                "symbols": [
+                    "25"
+                ],
+                "symbols_names": [
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "291",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 10.74914089347079,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 291,
+                "vertical_support_1": 0,
+                "mean_duration_0": 1.71,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 1.71,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -1.71,
+                    0.0
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 141
+                        },
+                        {
+                            "Female": 150
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 71
+                        },
+                        {
+                            "85-90": 52
+                        },
+                        {
+                            "75-80": 87
+                        },
+                        {
+                            "65-70": 81
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 77
+                        },
+                        {
+                            "0": 50
+                        },
+                        {
+                            "4": 50
+                        },
+                        {
+                            "3": 60
+                        },
+                        {
+                            "2": 54
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 75
+                        },
+                        {
+                            "Very high": 62
+                        },
+                        {
+                            "Low": 87
+                        },
+                        {
+                            "Medium": 67
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 1.3966764832182899,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 1.9435297023487206,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 9.65540513443543,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 11.842876652506149,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "33": [
+            {
+                "size": 2,
+                "symbols": [
+                    "33",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Fluid.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "183",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 5.896174863387978,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 183,
+                "vertical_support_1": 0,
+                "mean_duration_0": 105.73,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 105.48,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -105.48,
+                    0.0,
+                    -54.19,
+                    -52.4
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 87
+                        },
+                        {
+                            "Female": 96
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 46
+                        },
+                        {
+                            "85-90": 32
+                        },
+                        {
+                            "75-80": 58
+                        },
+                        {
+                            "65-70": 47
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 48
+                        },
+                        {
+                            "0": 36
+                        },
+                        {
+                            "3": 37
+                        },
+                        {
+                            "4": 36
+                        },
+                        {
+                            "2": 26
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 48
+                        },
+                        {
+                            "Very high": 36
+                        },
+                        {
+                            "Low": 53
+                        },
+                        {
+                            "Medium": 46
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 83.19320364757353,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 128.01991110652486,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 4.968006296638993,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 6.824343430136963,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "34": [
+            {
+                "size": 2,
+                "symbols": [
+                    "34",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Fluid.high",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "184",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 7.130434782608695,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 184,
+                "vertical_support_1": 0,
+                "mean_duration_0": 142.84,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 142.55,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -142.55,
+                    0.0,
+                    -63.62,
+                    -61.66
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 94
+                        },
+                        {
+                            "Female": 90
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 42
+                        },
+                        {
+                            "75-80": 55
+                        },
+                        {
+                            "85-90": 33
+                        },
+                        {
+                            "65-70": 54
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 55
+                        },
+                        {
+                            "4": 29
+                        },
+                        {
+                            "3": 33
+                        },
+                        {
+                            "0": 29
+                        },
+                        {
+                            "2": 38
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 46
+                        },
+                        {
+                            "Very high": 35
+                        },
+                        {
+                            "Low": 59
+                        },
+                        {
+                            "Medium": 44
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 102.60072604921444,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 154.13840438556818,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 6.043943860233259,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 8.216925704984131,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "35": [
+            {
+                "size": 2,
+                "symbols": [
+                    "35",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Food.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "203",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 5.788177339901478,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 203,
+                "vertical_support_1": 0,
+                "mean_duration_0": 75.47,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 75.18,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -75.18,
+                    0.0,
+                    -37.55,
+                    -35.76
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 98
+                        },
+                        {
+                            "Female": 105
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 50
+                        },
+                        {
+                            "85-90": 41
+                        },
+                        {
+                            "75-80": 55
+                        },
+                        {
+                            "65-70": 57
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 52
+                        },
+                        {
+                            "0": 33
+                        },
+                        {
+                            "3": 48
+                        },
+                        {
+                            "4": 33
+                        },
+                        {
+                            "2": 37
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 54
+                        },
+                        {
+                            "Very high": 45
+                        },
+                        {
+                            "Low": 58
+                        },
+                        {
+                            "Medium": 46
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 54.143642618111116,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 88.75290910602682,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 5.045479310683255,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 6.5308753691197,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "41": [
+            {
+                "size": 2,
+                "symbols": [
+                    "41",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Toilet.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "184",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 3.5,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 184,
+                "vertical_support_1": 0,
+                "mean_duration_0": 16.93,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 16.45,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -16.45,
+                    0.0,
+                    -7.41,
+                    -5.48
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 87
+                        },
+                        {
+                            "Female": 97
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 47
+                        },
+                        {
+                            "85-90": 34
+                        },
+                        {
+                            "75-80": 54
+                        },
+                        {
+                            "65-70": 49
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 53
+                        },
+                        {
+                            "4": 31
+                        },
+                        {
+                            "3": 40
+                        },
+                        {
+                            "0": 28
+                        },
+                        {
+                            "2": 32
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 49
+                        },
+                        {
+                            "Very high": 37
+                        },
+                        {
+                            "Low": 54
+                        },
+                        {
+                            "Medium": 44
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 13.210399177680182,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 18.03960082231982,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 3.062199497357482,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.937800502642518,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "45": [
+            {
+                "size": 2,
+                "symbols": [
+                    "45",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Positive Communication.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "<"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "188",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.99468085106383,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 188,
+                "vertical_support_1": 0,
+                "mean_duration_0": 7.56,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 3.85,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -3.85,
+                    0.0,
+                    2.0,
+                    3.71
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 93
+                        },
+                        {
+                            "Female": 95
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 45
+                        },
+                        {
+                            "85-90": 35
+                        },
+                        {
+                            "75-80": 56
+                        },
+                        {
+                            "65-70": 52
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 56
+                        },
+                        {
+                            "0": 34
+                        },
+                        {
+                            "4": 24
+                        },
+                        {
+                            "3": 42
+                        },
+                        {
+                            "2": 32
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 47
+                        },
+                        {
+                            "Very high": 45
+                        },
+                        {
+                            "Low": 56
+                        },
+                        {
+                            "Medium": 40
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 6.747693125365511,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 8.369328151230235,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.6397285504940853,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.3496331516335744,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "47": [
+            {
+                "size": 2,
+                "symbols": [
+                    "47",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Entertainer.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "<"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "203",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.9261083743842367,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 203,
+                "vertical_support_1": 0,
+                "mean_duration_0": 6.89,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 3.06,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -3.06,
+                    0.0,
+                    2.0,
+                    3.83
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 94
+                        },
+                        {
+                            "Female": 109
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 53
+                        },
+                        {
+                            "85-90": 39
+                        },
+                        {
+                            "75-80": 55
+                        },
+                        {
+                            "65-70": 56
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 62
+                        },
+                        {
+                            "0": 29
+                        },
+                        {
+                            "3": 41
+                        },
+                        {
+                            "2": 37
+                        },
+                        {
+                            "4": 34
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 53
+                        },
+                        {
+                            "Very high": 39
+                        },
+                        {
+                            "Low": 62
+                        },
+                        {
+                            "Medium": 49
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 6.303278466497327,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 7.371598380793314,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.624362536994506,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 3.2278542117739675,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "51": [
+            {
+                "size": 2,
+                "symbols": [
+                    "51",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Exrcise.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "<"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "204",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 2.5980392156862746,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 204,
+                "vertical_support_1": 0,
+                "mean_duration_0": 6.97,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 3.08,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -3.08,
+                    0.0,
+                    2.0,
+                    3.9
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 94
+                        },
+                        {
+                            "Female": 110
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 49
+                        },
+                        {
+                            "85-90": 37
+                        },
+                        {
+                            "75-80": 57
+                        },
+                        {
+                            "65-70": 61
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 60
+                        },
+                        {
+                            "0": 31
+                        },
+                        {
+                            "4": 34
+                        },
+                        {
+                            "3": 42
+                        },
+                        {
+                            "2": 37
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 57
+                        },
+                        {
+                            "Very high": 40
+                        },
+                        {
+                            "Low": 60
+                        },
+                        {
+                            "Medium": 47
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 6.117229441170258,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 7.382770558829742,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 2.27240987195153,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 2.923668559421019,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "53": [
+            {
+                "size": 2,
+                "symbols": [
+                    "53",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Appetite.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "202",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 4.4405940594059405,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 202,
+                "vertical_support_1": 0,
+                "mean_duration_0": 39.06,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 38.54,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -38.54,
+                    0.0,
+                    -18.86,
+                    -16.91
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 97
+                        },
+                        {
+                            "Female": 105
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 50
+                        },
+                        {
+                            "75-80": 64
+                        },
+                        {
+                            "85-90": 35
+                        },
+                        {
+                            "65-70": 53
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 58
+                        },
+                        {
+                            "0": 35
+                        },
+                        {
+                            "4": 32
+                        },
+                        {
+                            "3": 39
+                        },
+                        {
+                            "2": 38
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 63
+                        },
+                        {
+                            "Low": 60
+                        },
+                        {
+                            "Very high": 37
+                        },
+                        {
+                            "Medium": 42
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 28.918021173360508,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 47.45821645040187,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 3.8992066601394706,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 4.9819814586724105,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "54": [
+            {
+                "size": 2,
+                "symbols": [
+                    "54",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Appetite.high",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "199",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 4.849246231155779,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 199,
+                "vertical_support_1": 0,
+                "mean_duration_0": 44.12,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 43.7,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -43.7,
+                    0.0,
+                    -22.89,
+                    -21.11
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Female": 96
+                        },
+                        {
+                            "Male": 103
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "85-90": 38
+                        },
+                        {
+                            "75-80": 57
+                        },
+                        {
+                            "95-100": 45
+                        },
+                        {
+                            "65-70": 59
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 54
+                        },
+                        {
+                            "0": 37
+                        },
+                        {
+                            "3": 36
+                        },
+                        {
+                            "4": 37
+                        },
+                        {
+                            "2": 35
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "Very high": 48
+                        },
+                        {
+                            "Low": 63
+                        },
+                        {
+                            "High": 44
+                        },
+                        {
+                            "Medium": 44
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 30.497915671500905,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 51.64278784608703,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 4.156969412398758,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 5.5415230499128,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "55": [
+            {
+                "size": 2,
+                "symbols": [
+                    "55",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Fluid_Amount.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "185",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 4.9837837837837835,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 185,
+                "vertical_support_1": 0,
+                "mean_duration_0": 78.87,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 78.56,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -78.56,
+                    0.0,
+                    -40.35,
+                    -38.6
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 85
+                        },
+                        {
+                            "Female": 100
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 40
+                        },
+                        {
+                            "85-90": 34
+                        },
+                        {
+                            "75-80": 60
+                        },
+                        {
+                            "65-70": 51
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 49
+                        },
+                        {
+                            "0": 35
+                        },
+                        {
+                            "4": 35
+                        },
+                        {
+                            "3": 39
+                        },
+                        {
+                            "2": 27
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 49
+                        },
+                        {
+                            "Very high": 42
+                        },
+                        {
+                            "Low": 50
+                        },
+                        {
+                            "Medium": 44
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 59.305969093468846,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 96.06700387950413,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 4.291311851537272,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 5.676255716030295,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "57": [
+            {
+                "size": 2,
+                "symbols": [
+                    "57",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Happiness.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "207",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 5.961352657004831,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 207,
+                "vertical_support_1": 0,
+                "mean_duration_0": 68.65,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 68.38,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -68.38,
+                    0.0,
+                    -33.47,
+                    -31.69
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Male": 99
+                        },
+                        {
+                            "Female": 108
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "95-100": 50
+                        },
+                        {
+                            "85-90": 39
+                        },
+                        {
+                            "75-80": 58
+                        },
+                        {
+                            "65-70": 60
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "1": 60
+                        },
+                        {
+                            "0": 34
+                        },
+                        {
+                            "4": 34
+                        },
+                        {
+                            "3": 37
+                        },
+                        {
+                            "2": 42
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "High": 53
+                        },
+                        {
+                            "Very high": 44
+                        },
+                        {
+                            "Low": 62
+                        },
+                        {
+                            "Medium": 48
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 39.650569215865175,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 65.30595252326526,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 5.166909603667791,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 6.755795710341871,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ],
+        "63": [
+            {
+                "size": 2,
+                "symbols": [
+                    "63",
+                    "25"
+                ],
+                "symbols_names": [
+                    "Diet.low",
+                    "medical_routin_special_intervene.low"
+                ],
+                "relations": [
+                    "c"
+                ],
+                "exist_in_class0": true,
+                "exist_in_class1": false,
+                "num_supporting_entities_0": "192",
+                "num_supporting_entities_1": 0,
+                "mean_horizontal_support_0": 4.276041666666667,
+                "mean_horizontal_support_1": 0,
+                "vertical_support_0": 192,
+                "vertical_support_1": 0,
+                "mean_duration_0": 35.36,
+                "mean_duration_1": 0,
+                "mean_of_first_interval_0": 34.89,
+                "mean_of_first_interval_1": 0,
+                "mean_offset_from_first_symbol_0": [
+                    -34.89,
+                    0.0,
+                    -16.96,
+                    -15.07
+                ],
+                "mean_offset_from_first_symbol_1": [],
+                "build_supporting_instances_0": false,
+                "build_supporting_instances_1": false,
+                "supporting_entities_properties_0": {
+                    "Gender": [
+                        {
+                            "Female": 105
+                        },
+                        {
+                            "Male": 87
+                        }
+                    ],
+                    "Age Range": [
+                        {
+                            "75-80": 57
+                        },
+                        {
+                            "85-90": 38
+                        },
+                        {
+                            "95-100": 46
+                        },
+                        {
+                            "65-70": 51
+                        }
+                    ],
+                    "Home care rating": [
+                        {
+                            "0": 32
+                        },
+                        {
+                            "4": 35
+                        },
+                        {
+                            "1": 52
+                        },
+                        {
+                            "3": 41
+                        },
+                        {
+                            "2": 32
+                        }
+                    ],
+                    "Monitoring frequency": [
+                        {
+                            "Low": 56
+                        },
+                        {
+                            "High": 47
+                        },
+                        {
+                            "Very high": 43
+                        },
+                        {
+                            "Medium": 46
+                        }
+                    ]
+                },
+                "supporting_entities_properties_1": {},
+                "md_confidence_interval_low": 25.488273512527464,
+                "md_confidence_interval_low_class_1": 0,
+                "md_confidence_interval_high": 41.76172648747254,
+                "md_confidence_interval_high_class_1": 0,
+                "hs_confidence_interval_low": 3.723505002093431,
+                "hs_confidence_interval_low_class_1": 0,
+                "hs_confidence_interval_high": 4.828578331239903,
+                "hs_confidence_interval_high_class_1": 0
+            }
+        ]
+    }
+}
