@@ -59,18 +59,14 @@ def get_supporting_instances(entities, instances, line_vector, symbols, index, n
 """this method gets a visualization path and initializes all data structures"""
 def initialize_read_file():
     calc_offsets_class0 = False
-    calc_offsets_class1 = False
     """saving the lines read from the file to later create the TIRPS"""
     class0_lines, calc_offsets_class0 = get_lines_from_file()
     
-
     """CONSTANTS"""
     TIRP_SIZE_0 = 0
     SYMBOLS_0 = 1
     RELATIONS_0 = 2
     NUM_SUPPORT_ENTITIES_0 = 3 if not calc_offsets_class0 else 6
-   
-   
 
     discovered_tirps = {}
     entities_properties, properties = parse_entities_file()
@@ -99,8 +95,6 @@ def initialize_read_file():
 
 
 """gets path to KL output and returns all lines"""
-
-
 def get_lines_from_file():
     path = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(path, "datasets", "KLOutout_class0")
@@ -453,8 +447,6 @@ def tirps_list_to_json(tirps_list):
 
 
 """searches in all the already discovered TIRPs for the cetrain TIPR by its unique name"""
-
-
 def is_TIRP_already_discovered(tirp_symbols, tirp_relations, discovered_tirps):
     wanted_tirp = " ".join(tirp_symbols) + " ".join(tirp_relations)
     for key in discovered_tirps:
@@ -464,8 +456,6 @@ def is_TIRP_already_discovered(tirp_symbols, tirp_relations, discovered_tirps):
 
 
 """for every TIRP object adds its symbols names"""
-
-
 def set_tirps_names(tirps):
     path = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(path, "datasets", "states.csv")
@@ -491,8 +481,6 @@ def set_tirps_names(tirps):
 
 
 """reads the entities file and creates a json of all the properties of entities"""
-
-
 def parse_entities_file():
     path = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(path, "datasets", "entities.csv")

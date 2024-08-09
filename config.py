@@ -11,21 +11,15 @@ class Config:
 
     # Default settings
     DEBUG = False
-    # TESTING = False
-    # WTF_CSRF_ENABLED = True
 
     # Settings applicable to all environments
     SECRET_KEY = os.getenv("SECRET_KEY", default="A very terrible secret key.")
 
-    # MAIL_USE_TLS = False
-    # MAIL_USE_SSL = True
     MAIL_SERVER = "smtp.gmail.com"
     MAIL_PORT = 465
     MAIL_USERNAME = os.getenv("MAIL_USERNAME", default="")
     MAIL_PASSWORD = os.getenv("MAIL_PASSWORD", default="")
-    # MAIL_DEFAULT_SENDER = os.getenv("MAIL_USERNAME", default="")
-    # MAIL_SUPPRESS_SEND = False
-
+   
     CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL ")
     RESULT_BACKEND = os.getenv("RESULT_BACKEND")
 
@@ -107,22 +101,12 @@ class Config:
 
 class DevelopmentConfig(Config):
     DEBUG = True
-
     SQLALCHEMY_DATABASE_URI = f"sqlite:///{os.path.join(basedir, 'local.db')}"
-
-
-# class TestingConfig(Config):
-#     TESTING = True
-#     WTF_CSRF_ENABLED = False
-#     MAIL_SUPPRESS_SEND = True
-#     SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, "test.db")
 
 
 class ProductionConfig(Config):
     DEBUG = False
-
     SQLALCHEMY_DATABASE_URI = os.getenv(
         "SQLALCHEMY_DATABASE_URI", default=f"sqlite:///{os.path.join(basedir, 'prod.db')}"
     )
-
     SQLALCHEMY_ENGINE_OPTIONS = {"pool_pre_ping": True}
