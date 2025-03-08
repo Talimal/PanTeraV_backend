@@ -7,6 +7,7 @@ from flask import current_app
 import sys
 from SymbolicTimeInterval import SymbolicTimeInterval
 from SupportingInstance import SupportingInstance
+from memory_profiler import profile, memory_usage
 
 
 def get_supporting_instances(entities, instances, line_vector, symbols, index, next_line, entities_stats={}):
@@ -57,11 +58,13 @@ def get_supporting_instances(entities, instances, line_vector, symbols, index, n
 
 
 """this method gets a visualization path and initializes all data structures"""
+@profile
 def initialize_read_file():
+    mem_before = memory_usage()[0]
+
     calc_offsets_class0 = False
     """saving the lines read from the file to later create the TIRPS"""
     class0_lines, calc_offsets_class0 = get_lines_from_file()
-    
     """CONSTANTS"""
     TIRP_SIZE_0 = 0
     SYMBOLS_0 = 1
@@ -91,13 +94,16 @@ def initialize_read_file():
     symbol_TIRPs = create_symbol_TIRPs(tirps=tirps)
     current_app.logger.debug("TALI PREPROCESSING - created symbol tirps")
     """creating data structure of tirp json"""
+    mem_after = memory_usage()[0]
+    mem_report = f"Memory usage before: {mem_before} MB, after: {mem_after} MB, difference: {mem_after - mem_before} MB"
+    print(mem_report)
     return symbol_TIRPs, symbols_to_names
 
 
 """gets path to KL output and returns all lines"""
 def get_lines_from_file():
     path = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(path, "datasets", "KLOutout_class0")
+    path = os.path.join(path, "datasets", "KLOutput_class0")
     myfile = open(path)
     lines = []
     for line in myfile:
@@ -141,7 +147,6 @@ def get_lines_from_file():
     all tirps that contain the order symbol(i), symbol(k)
     same as for symbols that come before
             """
-
 
 def create_symbol_TIRPs(tirps):
     symbols_connections_tirps = {}
@@ -238,7 +243,6 @@ def create_symbol_TIRPs(tirps):
                         "prefix"
                     ] = prefix_symbol_tirps  # adding the prefix json to the connected json
                     symbols_connections_tirps[symbol_row] = symbols_json
-
     return symbols_connections_tirps
 
 
@@ -258,6 +262,7 @@ def create_tirps(
     tirp_list = tirps_list
     lines_size = len(output_lines)
     for line_index in range(0, lines_size, 2):
+        print(f"line: {line_index+1}/{lines_size}")
         tirp_details = output_lines[line_index].split(' ')[:8]
         size = int(tirp_details[tirp_size_idx])
         # take the symbols only(last place is '' after split)
