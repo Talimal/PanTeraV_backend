@@ -1,0 +1,45 @@
+Memory usage before: 148.71875 MB, after: 807.40625 MB, difference: 658.6875 MB
+Filename: C:\Users\talim\Desktop\thesis_backend\Read_KL_Output_File.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    61    148.7 MiB    148.7 MiB           1   @profile
+    62                                         def initialize_read_file():
+    63    148.7 MiB      0.0 MiB           1       mem_before = memory_usage()[0]
+    64
+    65    148.7 MiB      0.0 MiB           1       calc_offsets_class0 = False
+    66    148.7 MiB      0.0 MiB           1       """saving the lines read from the file to later create the TIRPS"""
+    67    198.1 MiB     49.4 MiB           1       class0_lines, calc_offsets_class0 = get_lines_from_file()
+    68    198.1 MiB      0.0 MiB           1       """CONSTANTS"""
+    69    198.1 MiB      0.0 MiB           1       TIRP_SIZE_0 = 0
+    70    198.1 MiB      0.0 MiB           1       SYMBOLS_0 = 1
+    71    198.1 MiB      0.0 MiB           1       RELATIONS_0 = 2
+    72    198.1 MiB      0.0 MiB           1       NUM_SUPPORT_ENTITIES_0 = 3 if not calc_offsets_class0 else 6
+    73
+    74    198.1 MiB      0.0 MiB           1       discovered_tirps = {}
+    75    198.2 MiB      0.1 MiB           1       entities_properties, properties = parse_entities_file()
+    76    198.2 MiB      0.0 MiB           1       """reading class 0 tirps and turns them into objects"""
+    77    807.2 MiB    609.0 MiB           2       tirps = create_tirps(
+    78    198.2 MiB      0.0 MiB           1           output_lines=class0_lines,
+    79    198.2 MiB      0.0 MiB           1           tirp_size_idx=TIRP_SIZE_0,
+    80    198.2 MiB      0.0 MiB           1           symbols_idx=SYMBOLS_0,
+    81    198.2 MiB      0.0 MiB           1           relations_idx=RELATIONS_0,
+    82    198.2 MiB      0.0 MiB           1           properties=properties,
+    83    198.2 MiB      0.0 MiB           1           entities_properties=entities_properties,
+    84    198.2 MiB      0.0 MiB           1           num_sup_ent_idx=NUM_SUPPORT_ENTITIES_0,
+    85    198.2 MiB      0.0 MiB           1           discovered_tirps=discovered_tirps,
+    86    198.2 MiB      0.0 MiB           1           tirps_list=[],
+    87                                             )
+    88    807.2 MiB      0.0 MiB           1       current_app.logger.debug("TALI PREPROCESSING - created tirps class 0")
+    89    807.2 MiB      0.0 MiB           1       """reading class 1 tirps and turns them into objects"""
+    90
+    91    807.2 MiB      0.0 MiB           1       """adding to every TIRP symbols their names"""
+    92    807.3 MiB      0.1 MiB           1       symbols_to_names = set_tirps_names(tirps=tirps)        
+    93    807.3 MiB      0.0 MiB           1       """creating data structure of symbol tirps"""
+    94    807.4 MiB      0.1 MiB           1       symbol_TIRPs = create_symbol_TIRPs(tirps=tirps)        
+    95    807.4 MiB      0.0 MiB           1       current_app.logger.debug("TALI PREPROCESSING - created symbol tirps")
+    96    807.4 MiB      0.0 MiB           1       """creating data structure of tirp json"""
+    97    807.4 MiB      0.0 MiB           1       mem_after = memory_usage()[0]
+    98    807.4 MiB      0.0 MiB           1       mem_report = f"Memory usage before: {mem_before} MB, after: {mem_after} MB, difference: {mem_after - mem_before} MB"
+    99    807.4 MiB      0.0 MiB           1       print(mem_report)
+   100    807.4 MiB      0.0 MiB           1       return symbol_TIRPs, symbols_to_names
