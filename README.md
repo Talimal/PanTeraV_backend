@@ -26,7 +26,7 @@ The routes that the client can call to are in the tali.py file.
     symbols_to_names - json that maps symbol number to its string name.
     TIRPs_json - legacy file. Can be ignored (depends on the whole system, not this standalone version).
     Symbol_TIRPs - directory with all the indexes of the TIRPs. This is the output of the indexing algorithm of PanTeraV.
-    * The given dataset to explore is the Falls dataset, that is describes in the paper.
+    * The given dataset to explore is the Diabetes dataset, that is describes in the paper.
     The discovered TIRPs are a small version of KarmaLego output with VS=0.6.
 
 For any further information, please contact us talimal@post.bgu.ac.il. 
