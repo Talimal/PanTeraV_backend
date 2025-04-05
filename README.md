@@ -19,7 +19,7 @@ In order to install the packages, run "pip install -r requirements_for_backend/b
 This operation will open the server in the local host (ip - 0.0.0.0) which listens to all inputs from client.
 The routes that the client can call to are in the tali.py file.
 * Explanation about the needed files:
-    * In the datasets filder, you will find some files you need in order the server to work:
+    * In the datasets folder, you will find some files you need in order the server to work:
     entities.csv - dataframe that describes the entities in the dataset.
     KLOutput_class0 - output of the KarmaLego algorithm, with the discovered TIRPs.
     states.csv - details about the states in the dataset.
@@ -27,6 +27,5 @@ The routes that the client can call to are in the tali.py file.
     TIRPs_json - legacy file. Can be ignored (depends on the whole system, not this standalone version).
     Symbol_TIRPs - directory with all the indexes of the TIRPs. This is the output of the indexing algorithm of PanTeraV.
     * The given dataset to explore is the Diabetes dataset, that is describes in the paper.
-    The discovered TIRPs are a small version of KarmaLego output with VS=0.6.
 
 For any further information, please contact us talimal@post.bgu.ac.il. 
